@@ -1,4 +1,7 @@
 package assignment;
+
+import java.util.Scanner;
+
 public class exponent{
 
     public static double power(double x, int n){
@@ -8,6 +11,9 @@ public class exponent{
         return 1;
     }
     public static void main(String[] args) {
-        System.out.println(power(3, 4));
+        Scanner s = new Scanner(System.in);
+        double x = s.nextDouble();
+        int n = s.nextInt();
+        System.out.println(power(x, n));
     }
 }
